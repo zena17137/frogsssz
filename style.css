@@ -1,0 +1,151 @@
+body {
+	background-color: #43a047;
+	color: #fffb;
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	display: flex;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 28px;
+	font-family: 'Fredoka One', cursive;
+}
+
+p {
+	font-family: 'PT Sans', sans-serif;
+}
+
+.help {
+	font-family: 'Source Code Pro', monospace;
+	background-color: #fff4;
+	border-bottom: 1px solid #fffb;
+}
+
+#instructions {
+	padding: 30px;
+	width: 50%;
+}
+
+.editor {
+	position: relative;
+	background-color: #e0e0e0;
+	height: 260px;
+	padding: 10px 10px 10px 40px;
+	border-radius: 4px;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #7777c7;
+	overflow: hidden;
+}
+
+.line-numbers {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #999999;
+	color: #d5d5d5;
+	padding: 10px 6px;
+	height: 100%;
+	text-align: right;
+}
+
+pre {
+	margin: 0;
+}
+
+textarea {
+	height: 44px;
+	border: none;
+	outline: none;
+	resize: none;
+	overflow: auto;
+	margin-left: 26px;
+	width: 90%;
+}
+
+button {
+	background-color: #D11606;
+	border: none;
+	border-radius: 4px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #FFF;
+	padding: 5px 10px;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+
+
+#pond {
+	position: relative;
+	background-color: #1f5768;
+	width: 50vw;
+	height: 50vw;
+	border-bottom-left-radius: 30px;
+	overflow: hidden;
+	min-width: 300px;
+	min-height: 300px;
+}
+
+#forefront {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 95%;
+	height: 95%;
+	padding: 2.5%;
+	display: flex;
+}
+
+#background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 95%;
+	height: 95%;
+	padding: 2.5%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.lily-container, .frog-container {
+	width: 20%;
+	height: 20%;
+}
+
+.lily, .frog {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.lily.red {
+	background-image: url('images/lilypad-red.svg');
+}
+.lily.yellow {
+	background-image: url('images/lilypad-yellow.svg');
+}
+.lily.green {
+	background-image: url('images/lilypad-green.svg');
+}
+
+.frog.red {
+	background-image: url('images/frog-red.svg');
+}
+.frog.yellow {
+	background-image: url('images/frog-yellow.svg');
+}
+.frog.green {
+	background-image: url('images/frog-green.svg');
+}
